@@ -1,10 +1,10 @@
 /*
 reverse bits
 binary tree: 
-										0,1,2,3,4,5,6,7
-							0,2,4,6							1,3,5,7
-					  0,4			   2,6			 1,5				3,7
-					0	  4			 2	   6	   1	 5			  3		7
+                                        0,1,2,3,4,5,6,7
+                          0,2,4,6                            1,3,5,7
+                   0,4               2,6             1,5                 3,7
+                0       4         2        6      1        5          3        7
 					
 input        :  0 ,  4 ,  2 ,  6 ,  1 ,  5 ,  3 ,  7
 binary input : 000, 100, 010, 110, 001, 101, 011, 111
@@ -37,11 +37,11 @@ MyComplex MainWindow::get_omiga_m(int m)
 }
 
 /*
-		y1[k] ------------- + ----- y1[k] + omiga[k] * y2[k]
-						 \ /
-		omiga[k] ---	  /
-					|	 / \
-		y2[k] ----- * ----- - ----- y2[k] - omiga[k] * y1[k]
+        y1[k] ------------- + ----- y1[k] + omiga[k] * y2[k]
+                         \ /
+        omiga[k] ---      /
+                    |    / \
+        y2[k] ----- * ----- - ----- y2[k] - omiga[k] * y1[k]
 */
 void MainWindow::iterativeFFT(QVector<MyComplex> &fft, const int exponent, const int length)
 {
